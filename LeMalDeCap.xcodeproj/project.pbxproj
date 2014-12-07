@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344852DF1A33E89F0071852D /* PassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344852DE1A33E89F0071852D /* PassViewController.m */; };
+		345CA1611A30AF5A00B718A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA1601A30AF5A00B718A1 /* main.m */; };
+		345CA1641A30AF5A00B718A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA1631A30AF5A00B718A1 /* AppDelegate.m */; };
+		345CA1671A30AF5A00B718A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA1661A30AF5A00B718A1 /* ViewController.m */; };
+		345CA16A1A30AF5A00B718A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345CA1681A30AF5A00B718A1 /* Main.storyboard */; };
+		345CA16C1A30AF5A00B718A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345CA16B1A30AF5A00B718A1 /* Images.xcassets */; };
+		345CA16F1A30AF5A00B718A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345CA16D1A30AF5A00B718A1 /* LaunchScreen.xib */; };
+		345CA17B1A30AF5A00B718A1 /* LeMalDeCapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA17A1A30AF5A00B718A1 /* LeMalDeCapTests.m */; };
+		345CA1851A30AFDC00B718A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345CA1841A30AFDC00B718A1 /* Social.framework */; };
+		345CA1871A30AFE300B718A1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345CA1861A30AFE300B718A1 /* CoreFoundation.framework */; };
+		345CA1891A30AFF300B718A1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345CA1881A30AFF300B718A1 /* Parse.framework */; };
+		345CA18C1A30B08F00B718A1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA18B1A30B08F00B718A1 /* MBProgressHUD.m */; };
+		345CA18F1A30B09D00B718A1 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 345CA18D1A30B09D00B718A1 /* 37x-Checkmark.png */; };
+		345CA1901A30B09D00B718A1 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 345CA18E1A30B09D00B718A1 /* 37x-Checkmark@2x.png */; };
+		345CA1921A30B30600B718A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345CA1911A30B30600B718A1 /* CFNetwork.framework */; };
+		345CA1941A30B32100B718A1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345CA1931A30B32100B718A1 /* Bolts.framework */; };
+		345CA1961A30B35A00B718A1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345CA1951A30B35A00B718A1 /* SystemConfiguration.framework */; };
+		345CA1981A30B37A00B718A1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345CA1971A30B37A00B718A1 /* MobileCoreServices.framework */; };
+		345CA19D1A30B4A900B718A1 /* FotoViewerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA19C1A30B4A900B718A1 /* FotoViewerTableViewController.m */; };
+		345CA19F1A30BAF400B718A1 /* fotoPerfil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 345CA19E1A30BAF400B718A1 /* fotoPerfil.jpg */; };
+		345CA1A51A30CCD800B718A1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA1A41A30CCD800B718A1 /* UIImage+ImageEffects.m */; };
+		345CA1A81A30E08C00B718A1 /* AddCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345CA1A71A30E08C00B718A1 /* AddCommentViewController.m */; };
+		345CA1AB1A30E9F900B718A1 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 345CA1A91A30E9F900B718A1 /* cross.png */; };
+		345CA1AC1A30E9F900B718A1 /* cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 345CA1AA1A30E9F900B718A1 /* cross@2x.png */; };
+		349A8E7D1A313C3100322FBD /* VideoOrPhotoCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 349A8E7C1A313C3100322FBD /* VideoOrPhotoCellTableViewCell.m */; };
+		34E26F771A30FAB600B53FC3 /* SwitcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E26F761A30FAB600B53FC3 /* SwitcherViewController.m */; };
+		34E26F7A1A30FD5000B53FC3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E26F791A30FD5000B53FC3 /* Reachability.m */; };
+		34E26F7D1A30FEED00B53FC3 /* fondoIntro.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E26F7C1A30FEED00B53FC3 /* fondoIntro.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		345CA1751A30AF5A00B718A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345CA1531A30AF5A00B718A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 345CA15A1A30AF5A00B718A1;
+			remoteInfo = LeMalDeCap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344852DD1A33E89E0071852D /* PassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassViewController.h; sourceTree = "<group>"; };
+		344852DE1A33E89F0071852D /* PassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassViewController.m; sourceTree = "<group>"; };
+		345CA15B1A30AF5A00B718A1 /* LeMalDeCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeMalDeCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		345CA15F1A30AF5A00B718A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345CA1601A30AF5A00B718A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		345CA1621A30AF5A00B718A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		345CA1631A30AF5A00B718A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		345CA1651A30AF5A00B718A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		345CA1661A30AF5A00B718A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		345CA1691A30AF5A00B718A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		345CA16B1A30AF5A00B718A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		345CA16E1A30AF5A00B718A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		345CA1741A30AF5A00B718A1 /* LeMalDeCapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeMalDeCapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		345CA1791A30AF5A00B718A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345CA17A1A30AF5A00B718A1 /* LeMalDeCapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeMalDeCapTests.m; sourceTree = "<group>"; };
+		345CA1841A30AFDC00B718A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		345CA1861A30AFE300B718A1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		345CA1881A30AFF300B718A1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		345CA18A1A30B08F00B718A1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		345CA18B1A30B08F00B718A1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		345CA18D1A30B09D00B718A1 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		345CA18E1A30B09D00B718A1 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
+		345CA1911A30B30600B718A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		345CA1931A30B32100B718A1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		345CA1951A30B35A00B718A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		345CA1971A30B37A00B718A1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		345CA19B1A30B4A900B718A1 /* FotoViewerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotoViewerTableViewController.h; sourceTree = "<group>"; };
+		345CA19C1A30B4A900B718A1 /* FotoViewerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotoViewerTableViewController.m; sourceTree = "<group>"; };
+		345CA19E1A30BAF400B718A1 /* fotoPerfil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fotoPerfil.jpg; sourceTree = "<group>"; };
+		345CA1A31A30CCD800B718A1 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		345CA1A41A30CCD800B718A1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		345CA1A61A30E08C00B718A1 /* AddCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCommentViewController.h; sourceTree = "<group>"; };
+		345CA1A71A30E08C00B718A1 /* AddCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCommentViewController.m; sourceTree = "<group>"; };
+		345CA1A91A30E9F900B718A1 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		345CA1AA1A30E9F900B718A1 /* cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross@2x.png"; sourceTree = "<group>"; };
+		349A8E7B1A313C3100322FBD /* VideoOrPhotoCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoOrPhotoCellTableViewCell.h; sourceTree = "<group>"; };
+		349A8E7C1A313C3100322FBD /* VideoOrPhotoCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoOrPhotoCellTableViewCell.m; sourceTree = "<group>"; };
+		34E26F751A30FAB600B53FC3 /* SwitcherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitcherViewController.h; sourceTree = "<group>"; };
+		34E26F761A30FAB600B53FC3 /* SwitcherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitcherViewController.m; sourceTree = "<group>"; };
+		34E26F781A30FD5000B53FC3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		34E26F791A30FD5000B53FC3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		34E26F7C1A30FEED00B53FC3 /* fondoIntro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoIntro.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		345CA1581A30AF5A00B718A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345CA1981A30B37A00B718A1 /* MobileCoreServices.framework in Frameworks */,
+				345CA1961A30B35A00B718A1 /* SystemConfiguration.framework in Frameworks */,
+				345CA1941A30B32100B718A1 /* Bolts.framework in Frameworks */,
+				345CA1921A30B30600B718A1 /* CFNetwork.framework in Frameworks */,
+				345CA1871A30AFE300B718A1 /* CoreFoundation.framework in Frameworks */,
+				345CA1891A30AFF300B718A1 /* Parse.framework in Frameworks */,
+				345CA1851A30AFDC00B718A1 /* Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345CA1711A30AF5A00B718A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		345CA1521A30AF5A00B718A1 = {
+			isa = PBXGroup;
+			children = (
+				345CA15D1A30AF5A00B718A1 /* LeMalDeCap */,
+				345CA1771A30AF5A00B718A1 /* LeMalDeCapTests */,
+				345CA15C1A30AF5A00B718A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		345CA15C1A30AF5A00B718A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				345CA15B1A30AF5A00B718A1 /* LeMalDeCap.app */,
+				345CA1741A30AF5A00B718A1 /* LeMalDeCapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		345CA15D1A30AF5A00B718A1 /* LeMalDeCap */ = {
+			isa = PBXGroup;
+			children = (
+				34E26F7B1A30FD5700B53FC3 /* Libraries */,
+				345CA1621A30AF5A00B718A1 /* AppDelegate.h */,
+				345CA1631A30AF5A00B718A1 /* AppDelegate.m */,
+				344852DD1A33E89E0071852D /* PassViewController.h */,
+				344852DE1A33E89F0071852D /* PassViewController.m */,
+				34E26F751A30FAB600B53FC3 /* SwitcherViewController.h */,
+				34E26F761A30FAB600B53FC3 /* SwitcherViewController.m */,
+				345CA19B1A30B4A900B718A1 /* FotoViewerTableViewController.h */,
+				345CA19C1A30B4A900B718A1 /* FotoViewerTableViewController.m */,
+				345CA1651A30AF5A00B718A1 /* ViewController.h */,
+				345CA1661A30AF5A00B718A1 /* ViewController.m */,
+				345CA1A61A30E08C00B718A1 /* AddCommentViewController.h */,
+				345CA1A71A30E08C00B718A1 /* AddCommentViewController.m */,
+				349A8E7B1A313C3100322FBD /* VideoOrPhotoCellTableViewCell.h */,
+				349A8E7C1A313C3100322FBD /* VideoOrPhotoCellTableViewCell.m */,
+				345CA1681A30AF5A00B718A1 /* Main.storyboard */,
+				345CA16B1A30AF5A00B718A1 /* Images.xcassets */,
+				345CA16D1A30AF5A00B718A1 /* LaunchScreen.xib */,
+				345CA15E1A30AF5A00B718A1 /* Supporting Files */,
+			);
+			path = LeMalDeCap;
+			sourceTree = "<group>";
+		};
+		345CA15E1A30AF5A00B718A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				345CA1971A30B37A00B718A1 /* MobileCoreServices.framework */,
+				345CA1951A30B35A00B718A1 /* SystemConfiguration.framework */,
+				345CA1911A30B30600B718A1 /* CFNetwork.framework */,
+				345CA1931A30B32100B718A1 /* Bolts.framework */,
+				345CA1861A30AFE300B718A1 /* CoreFoundation.framework */,
+				345CA1841A30AFDC00B718A1 /* Social.framework */,
+				345CA1881A30AFF300B718A1 /* Parse.framework */,
+				345CA15F1A30AF5A00B718A1 /* Info.plist */,
+				34E26F7C1A30FEED00B53FC3 /* fondoIntro.png */,
+				345CA18D1A30B09D00B718A1 /* 37x-Checkmark.png */,
+				345CA18E1A30B09D00B718A1 /* 37x-Checkmark@2x.png */,
+				345CA1A91A30E9F900B718A1 /* cross.png */,
+				345CA1AA1A30E9F900B718A1 /* cross@2x.png */,
+				345CA19E1A30BAF400B718A1 /* fotoPerfil.jpg */,
+				345CA1601A30AF5A00B718A1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		345CA1771A30AF5A00B718A1 /* LeMalDeCapTests */ = {
+			isa = PBXGroup;
+			children = (
+				345CA17A1A30AF5A00B718A1 /* LeMalDeCapTests.m */,
+				345CA1781A30AF5A00B718A1 /* Supporting Files */,
+			);
+			path = LeMalDeCapTests;
+			sourceTree = "<group>";
+		};
+		345CA1781A30AF5A00B718A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				345CA1791A30AF5A00B718A1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34E26F7B1A30FD5700B53FC3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				34E26F781A30FD5000B53FC3 /* Reachability.h */,
+				34E26F791A30FD5000B53FC3 /* Reachability.m */,
+				345CA1A31A30CCD800B718A1 /* UIImage+ImageEffects.h */,
+				345CA1A41A30CCD800B718A1 /* UIImage+ImageEffects.m */,
+				345CA18A1A30B08F00B718A1 /* MBProgressHUD.h */,
+				345CA18B1A30B08F00B718A1 /* MBProgressHUD.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		345CA15A1A30AF5A00B718A1 /* LeMalDeCap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345CA17E1A30AF5A00B718A1 /* Build configuration list for PBXNativeTarget "LeMalDeCap" */;
+			buildPhases = (
+				345CA1571A30AF5A00B718A1 /* Sources */,
+				345CA1581A30AF5A00B718A1 /* Frameworks */,
+				345CA1591A30AF5A00B718A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeMalDeCap;
+			productName = LeMalDeCap;
+			productReference = 345CA15B1A30AF5A00B718A1 /* LeMalDeCap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		345CA1731A30AF5A00B718A1 /* LeMalDeCapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345CA1811A30AF5A00B718A1 /* Build configuration list for PBXNativeTarget "LeMalDeCapTests" */;
+			buildPhases = (
+				345CA1701A30AF5A00B718A1 /* Sources */,
+				345CA1711A30AF5A00B718A1 /* Frameworks */,
+				345CA1721A30AF5A00B718A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				345CA1761A30AF5A00B718A1 /* PBXTargetDependency */,
+			);
+			name = LeMalDeCapTests;
+			productName = LeMalDeCapTests;
+			productReference = 345CA1741A30AF5A00B718A1 /* LeMalDeCapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		345CA1531A30AF5A00B718A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mauro Vime Castillo";
+				TargetAttributes = {
+					345CA15A1A30AF5A00B718A1 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = Z4J229RMGR;
+					};
+					345CA1731A30AF5A00B718A1 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 345CA15A1A30AF5A00B718A1;
+					};
+				};
+			};
+			buildConfigurationList = 345CA1561A30AF5A00B718A1 /* Build configuration list for PBXProject "LeMalDeCap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 345CA1521A30AF5A00B718A1;
+			productRefGroup = 345CA15C1A30AF5A00B718A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				345CA15A1A30AF5A00B718A1 /* LeMalDeCap */,
+				345CA1731A30AF5A00B718A1 /* LeMalDeCapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		345CA1591A30AF5A00B718A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345CA18F1A30B09D00B718A1 /* 37x-Checkmark.png in Resources */,
+				345CA16A1A30AF5A00B718A1 /* Main.storyboard in Resources */,
+				345CA19F1A30BAF400B718A1 /* fotoPerfil.jpg in Resources */,
+				345CA16F1A30AF5A00B718A1 /* LaunchScreen.xib in Resources */,
+				345CA1901A30B09D00B718A1 /* 37x-Checkmark@2x.png in Resources */,
+				34E26F7D1A30FEED00B53FC3 /* fondoIntro.png in Resources */,
+				345CA1AC1A30E9F900B718A1 /* cross@2x.png in Resources */,
+				345CA16C1A30AF5A00B718A1 /* Images.xcassets in Resources */,
+				345CA1AB1A30E9F900B718A1 /* cross.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345CA1721A30AF5A00B718A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		345CA1571A30AF5A00B718A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345CA1671A30AF5A00B718A1 /* ViewController.m in Sources */,
+				345CA1641A30AF5A00B718A1 /* AppDelegate.m in Sources */,
+				344852DF1A33E89F0071852D /* PassViewController.m in Sources */,
+				345CA1A81A30E08C00B718A1 /* AddCommentViewController.m in Sources */,
+				34E26F771A30FAB600B53FC3 /* SwitcherViewController.m in Sources */,
+				345CA1A51A30CCD800B718A1 /* UIImage+ImageEffects.m in Sources */,
+				345CA1611A30AF5A00B718A1 /* main.m in Sources */,
+				345CA18C1A30B08F00B718A1 /* MBProgressHUD.m in Sources */,
+				349A8E7D1A313C3100322FBD /* VideoOrPhotoCellTableViewCell.m in Sources */,
+				34E26F7A1A30FD5000B53FC3 /* Reachability.m in Sources */,
+				345CA19D1A30B4A900B718A1 /* FotoViewerTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345CA1701A30AF5A00B718A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345CA17B1A30AF5A00B718A1 /* LeMalDeCapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		345CA1761A30AF5A00B718A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 345CA15A1A30AF5A00B718A1 /* LeMalDeCap */;
+			targetProxy = 345CA1751A30AF5A00B718A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		345CA1681A30AF5A00B718A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345CA1691A30AF5A00B718A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		345CA16D1A30AF5A00B718A1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345CA16E1A30AF5A00B718A1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		345CA17C1A30AF5A00B718A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		345CA17D1A30AF5A00B718A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		345CA17F1A30AF5A00B718A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeMalDeCap",
+				);
+				INFOPLIST_FILE = LeMalDeCap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "937abda4-c1ce-48f6-8ac9-ecb750c7a9b2";
+			};
+			name = Debug;
+		};
+		345CA1801A30AF5A00B718A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeMalDeCap",
+				);
+				INFOPLIST_FILE = LeMalDeCap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "937abda4-c1ce-48f6-8ac9-ecb750c7a9b2";
+			};
+			name = Release;
+		};
+		345CA1821A30AF5A00B718A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LeMalDeCapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeMalDeCap.app/LeMalDeCap";
+			};
+			name = Debug;
+		};
+		345CA1831A30AF5A00B718A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LeMalDeCapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeMalDeCap.app/LeMalDeCap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		345CA1561A30AF5A00B718A1 /* Build configuration list for PBXProject "LeMalDeCap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CA17C1A30AF5A00B718A1 /* Debug */,
+				345CA17D1A30AF5A00B718A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345CA17E1A30AF5A00B718A1 /* Build configuration list for PBXNativeTarget "LeMalDeCap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CA17F1A30AF5A00B718A1 /* Debug */,
+				345CA1801A30AF5A00B718A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345CA1811A30AF5A00B718A1 /* Build configuration list for PBXNativeTarget "LeMalDeCapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CA1821A30AF5A00B718A1 /* Debug */,
+				345CA1831A30AF5A00B718A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 345CA1531A30AF5A00B718A1 /* Project object */;
+}
