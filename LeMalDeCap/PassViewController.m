@@ -51,7 +51,7 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if ([textField.text isEqualToString:@"TullirlaGioes"]) {
+    if ([textField.text isEqualToString:@""]) {
         [[NSUserDefaults standardUserDefaults] setObject:@"YEAH" forKey:@"pass"];
         [self performSegueWithIdentifier:@"seguePassOk" sender:self];
     }
