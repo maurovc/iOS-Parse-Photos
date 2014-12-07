@@ -8,11 +8,14 @@
 
 #import "PassViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import <Parse/Parse.h>
 
 @interface PassViewController () <UITextFieldDelegate>
 
+@property UIActivityIndicatorView *indicator;
 @property (weak, nonatomic) IBOutlet UITextField *passField;
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property NSString *pass;
 
 @end
 
@@ -23,6 +26,18 @@
     // Do any additional setup after loading the view.
     [self.passField setDelegate:self];
     [self.passField becomeFirstResponder];
+    CGFloat w = self.view.frame.size.width;
+    self.indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake((w - 37)/2.0, 281, 37, 37)];
+    [self.indicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [self.indicator setColor:[UIColor blackColor]];
+    [self.indicator startAnimating];
+    [self.view addSubview:self.indicator];
+    [PFConfig getConfigInBackgroundWithBlock:^(PFConfig *config, NSError *error) {
+        self.pass = config[@"Pass"];
+        [self.indicator stopAnimating];
+        
+    }];
+    
     if ([self hasEnteredBefore]) {
         if (nil != NSClassFromString(@"LAContext")) {
             LAContext *context = [[LAContext alloc] init];
@@ -51,7 +66,7 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if ([textField.text isEqualToString:@""]) {
+    if ([textField.text isEqualToString:self.pass]) {
         [[NSUserDefaults standardUserDefaults] setObject:@"YEAH" forKey:@"pass"];
         [self performSegueWithIdentifier:@"seguePassOk" sender:self];
     }
