@@ -1,11 +1,11 @@
-LeMalDeCap
-==========
+iOS-Parse-Photos
+================
 
 Simple app that uploads and downloads photos and videos from the Parse server.
 
 
 The MIT License (MIT)
-==========
+=====================
 
 Copyright (c) 2014 Mauro Vime Castillo
 
