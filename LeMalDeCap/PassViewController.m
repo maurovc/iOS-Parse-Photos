@@ -35,9 +35,42 @@
     [PFConfig getConfigInBackgroundWithBlock:^(PFConfig *config, NSError *error) {
         self.pass = config[@"Pass"];
         [self.indicator stopAnimating];
-        
+        NSString *passEnabled = config[@"PassEnabled"];
+        if ([passEnabled isEqualToString:@"NO"]) {
+            [NSTimer scheduledTimerWithTimeInterval:0.75
+                                             target:self
+                                           selector:@selector(sendSegue:)
+                                           userInfo:nil
+                                            repeats:NO];
+        }
+        else {
+            [NSTimer scheduledTimerWithTimeInterval:0.75
+                                             target:self
+                                           selector:@selector(showTouchID:)
+                                           userInfo:nil
+                                            repeats:NO];
+        }
     }];
-    
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if ([textField.text isEqualToString:self.pass]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"YEAH" forKey:@"pass"];
+        [self performSegueWithIdentifier:@"seguePassOk" sender:self];
+    }
+    else {
+        self.label.text = @"Bad password";
+    }
+    return YES;
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+-(void)showTouchID:(NSTimer *)timer
+{
     if ([self hasEnteredBefore]) {
         if (nil != NSClassFromString(@"LAContext")) {
             LAContext *context = [[LAContext alloc] init];
@@ -62,23 +95,6 @@
             }
         }
     }
-}
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    if ([textField.text isEqualToString:self.pass]) {
-        [[NSUserDefaults standardUserDefaults] setObject:@"YEAH" forKey:@"pass"];
-        [self performSegueWithIdentifier:@"seguePassOk" sender:self];
-    }
-    else {
-        self.label.text = @"Bad password";
-    }
-    return YES;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)sendSegue:(NSTimer *)timer

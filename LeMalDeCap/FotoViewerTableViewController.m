@@ -125,8 +125,7 @@
     PFObject *object = [self.objects objectAtIndex:section];
     
     
-    NSArray *array = [object objectForKey:@"Fotos"];
-    PFFile *file = [array objectAtIndex:1];
+    PFFile *file = [object objectForKey:@"Profile"];
     UIImageView *imV = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 60, 60)];
     [imV.layer setBorderWidth:2.0f];
     [imV.layer setBorderColor:[[UIColor colorWithRed:(123.0f/255.0f) green:(168.0f/255.0f) blue:(235.0f/255.0f) alpha:1.0f] CGColor]];
@@ -177,8 +176,7 @@
     NSString *comentario = [object objectForKey:@"comment"];
     UITextView *comment = [[UITextView alloc] initWithFrame:CGRectMake(8, w, (w - 16), 10 + [self heightForView:[UIFont fontWithName:@"HelveticaNeue-Bold" size:15.0f] text:comentario andSize:(w - 16)])];
     
-    NSArray *array = [object objectForKey:@"Fotos"];
-    PFFile *file = [array firstObject];
+    PFFile *file = [object objectForKey:@"Foto"];
     
     if ([file.name hasSuffix:@"video.mp4"]) {
         [[cell.contentView viewWithTag:123]removeFromSuperview] ;

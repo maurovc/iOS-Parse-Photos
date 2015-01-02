@@ -72,14 +72,14 @@
 {
     
     NSData *data;
-    PFFile *concertFile;
+    PFFile *fotoFile;
     if (foto != nil)  {
         data  =  UIImageJPEGRepresentation(foto, 1.0f);
-        concertFile = [PFFile fileWithName:@"fotoLMDC.jpg" data:data];
+        fotoFile = [PFFile fileWithName:@"fotoLMDC.jpg" data:data];
     }
     else {
         data = [NSData dataWithContentsOfURL:self.videoURL];
-        concertFile = [PFFile fileWithName:@"video.mp4" data:data];
+        fotoFile = [PFFile fileWithName:@"video.mp4" data:data];
     }
     
     if ([data length] <= 10000000) {
@@ -96,14 +96,14 @@
         [profileFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
                 // Save PFFile
-                [concertFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                [fotoFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                     if (!error) {
                         // Hide old HUD, show completed HUD (see example for code)
                         
                         // Create a PFObject around a PFFile and associate it with the current user
                         PFObject *concertObject = [PFObject objectWithClassName:@"SharedFotos"];
-                        NSArray *files = [[NSArray alloc] initWithObjects:concertFile,profileFile, nil];
-                        [concertObject setObject:files forKey:@"Fotos"];
+                        [concertObject setObject:fotoFile forKey:@"Foto"];
+                        [concertObject setObject:profileFile forKey:@"Profile"];
                         
                         concertObject[@"userName"] = @"Anonymous";
                         concertObject[@"comment"] = comment;

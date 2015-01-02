@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C78c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MTY-en-UfF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MTY-en-UfF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom de l'autor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14J-l2-ckA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Photographer name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14J-l2-ckA">
                                 <rect key="frame" x="8" y="250" width="304" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eK0-cw-1gt"/>
@@ -64,20 +64,7 @@
                             <constraint firstItem="14J-l2-ckA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="sas-Ti-eHr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="LMDC" id="GKp-45-Haz">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Svt-gm-lz1">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FCP-rL-vLg">
-                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="GO">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="QJ3-4e-KAw" kind="push" id="zuq-wg-uNz"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="LMDC" id="GKp-45-Haz"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="600"/>
                     <connections>
@@ -89,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="180"/>
+            <point key="canvasLocation" x="931" y="208"/>
         </scene>
         <!--Comment-->
         <scene sceneID="bda-zB-qI5">
@@ -103,7 +90,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Add a comment here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T2E-uY-TtU">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Add a comment here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T2E-uY-TtU">
                                 <rect key="frame" x="112" y="71" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="10Y-q9-eZM"/>
@@ -130,7 +117,7 @@
                                     <action selector="sendFoto:" destination="Yql-nx-nIO" eventType="touchUpInside" id="kCw-VM-azR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htS-6p-R9N">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="htS-6p-R9N">
                                 <rect key="frame" x="8" y="71" width="100" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
@@ -184,26 +171,13 @@
                             <outlet property="delegate" destination="QJ3-4e-KAw" id="Iyy-QS-8AG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Fotos" id="BNs-xy-jVc">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="QpQ-ue-Fcf">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oDn-Y6-9dJ">
-                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="GO">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="push" id="hYb-4Y-lz9"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Fotos" id="BNs-xy-jVc"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="600"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUB-mo-rZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="-559"/>
+            <point key="canvasLocation" x="975" y="-578"/>
         </scene>
         <!--Pass View Controller-->
         <scene sceneID="nxM-ru-wEl">
@@ -303,6 +277,7 @@
                         <outlet property="status" destination="7c0-iL-NS7" id="Qtu-1T-7ye"/>
                         <segue destination="ORB-Y0-Pgv" kind="modal" identifier="viewerSegue" id="3KP-OA-YYe"/>
                         <segue destination="4SJ-4g-0dw" kind="modal" identifier="fotoSegue" id="OXN-5v-nGo"/>
+                        <segue destination="ylS-s4-flI" kind="modal" identifier="segueWait" id="uTD-hE-T9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbx-Xf-cyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -329,6 +304,54 @@
             </objects>
             <point key="canvasLocation" x="229" y="180"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="DXQ-F4-EO0">
+            <objects>
+                <viewController id="ylS-s4-flI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CZY-QY-ak6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yay-k9-Vq9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9cP-7K-o1r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready for the 31st" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usp-Fu-VSM">
+                                <rect key="frame" x="10" y="171" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1eT-av-tby"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app will open for New Year's Eve" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-r9-BCh">
+                                <rect key="frame" x="16" y="254" width="288" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="8Gq-Gh-cpZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXm-r9-BCh" firstAttribute="trailing" secondItem="9cP-7K-o1r" secondAttribute="trailingMargin" id="2yq-tT-6zj"/>
+                            <constraint firstItem="usp-Fu-VSM" firstAttribute="leading" secondItem="9cP-7K-o1r" secondAttribute="leading" constant="10" id="KS6-B8-QUQ"/>
+                            <constraint firstAttribute="trailing" secondItem="usp-Fu-VSM" secondAttribute="trailing" constant="10" id="W1v-kg-9NR"/>
+                            <constraint firstItem="aXm-r9-BCh" firstAttribute="top" secondItem="usp-Fu-VSM" secondAttribute="bottom" constant="33" id="gkn-Vh-dCO"/>
+                            <constraint firstItem="aXm-r9-BCh" firstAttribute="leading" secondItem="9cP-7K-o1r" secondAttribute="leadingMargin" id="icz-uK-w9d"/>
+                            <constraint firstItem="usp-Fu-VSM" firstAttribute="top" secondItem="CZY-QY-ak6" secondAttribute="bottom" constant="151" id="nOz-1Y-PUa"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Upx-wF-lNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="-1223"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="GBA-8c-KuH">
             <objects>
@@ -350,8 +373,4 @@
             <point key="canvasLocation" x="229" y="-559"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="hYb-4Y-lz9"/>
-        <segue reference="zuq-wg-uNz"/>
-    </inferredMetricsTieBreakers>
 </document>

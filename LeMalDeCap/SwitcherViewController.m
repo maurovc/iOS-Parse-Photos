@@ -49,9 +49,12 @@
             if ([estado isEqualToString:@"Foto"]) {
                 [self performSegueWithIdentifier:@"fotoSegue" sender:self];
             }
-            else {
+            else if ([estado isEqualToString:@"Viewer"]){
                 [self performSegueWithIdentifier:@"viewerSegue" sender:self];
                 
+            }
+            else {
+                [self performSegueWithIdentifier:@"segueWait" sender:self];
             }
         }];
     }

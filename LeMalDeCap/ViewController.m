@@ -334,8 +334,8 @@
             }
         }
         else {
+            self.upImage = nil;
             NSURL *movieURL = [info objectForKey: UIImagePickerControllerMediaURL];
-            
             self.videoURL = movieURL;
             [self performSegueWithIdentifier:@"commentSegue" sender:self];
         }
